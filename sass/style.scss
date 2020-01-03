@@ -1,0 +1,105 @@
+@import 'reset.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
+
+/***** GENERAL *****/
+
+@font-face {
+        font-family: 'Montserrat-Bold';
+        src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+        font-family: 'Montserrat-Regular';
+        src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+
+
+/***** HEADER *****/
+
+.header-content {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)), url('../images/background.png');
+    background-size: cover;
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-family: 'Montserrat-Bold', sans-serif;
+            color: #fff;
+            margin-left: 40px;
+
+            p {
+                margin-left: 10px;
+            }
+        }
+            
+        .nav-items {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    color: #fff;
+                    font-family: 'Montserrat-Regular', sans-serif;
+                    margin-right: 40px;
+                }
+            }
+
+            img {
+                width: 20px;
+            }
+        }
+    }
+
+    .main-title {
+        text-align: center;
+        margin-top: 150px;
+
+        .title {
+            h1 {
+                font-family: 'Montserrat-Bold', sans-serif;
+                color: #fff;
+                font-size: 3.5rem;
+            }
+            h2 {
+                font-family: 'Montserrat-Bold', sans-serif;
+                color: #ed6950;
+                font-size: 3.5rem;
+            }
+            p {
+                font-family: 'Montserrat-Regular', sans-serif;
+                margin-top: 20px;
+                font-size: 0.9rem;
+                color: rgb(200, 202, 214);
+            }
+        }
+        .button {
+            font-family: 'Montserrat-Regular', sans-serif;
+            text-transform: uppercase;
+            margin-top: 50px;
+            a {
+                text-decoration: none;
+                color: brown;
+                font-size: 0.8rem;
+                border: 1px solid #ffc74a;
+                padding: 15px 20px;
+                background-color: #ffc74a;
+                border-radius: 30px;
+            }
+        }
+
+        .paragraph {
+            margin-top: 300px;
+            padding-bottom: 200px;
+            color: #fff;
+            font-family: 'Montserrat-Regular', sans-serif;
+        }
+    }
+}
